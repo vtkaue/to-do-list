@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: linear-gradient(90deg, #7f00ff 0%, #e100ff 100%);
+}
+.conteiner {
+  background-color: #ffffff;
+  width: 541px;
+  height: 498px;
+  margin-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+#input-main {
+  width: 342px;
+  height: 40px;
+  border: 2px solid rgba(209, 211, 212, 0.4);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+#button-main {
+  width: 130px;
+  height: 42px;
+  background: #7f00ff;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 2px;
+  color: white;
+  border: none;
+}
+#button-main:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+#button-main:active {
+  opacity: 0.5;
+}
+#tasks {
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+}
+.first-item-main {
+  background: #f2f2f2;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px 45px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 60px;
+}
+.first-item {
+  background: #f2f2f2;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px 45px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.item-name {
+  font-size: 15px;
+  color: #000000;
+}
+.delete-button {
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.fa-trash {
+  color: red;
+}
+.rocket-button {
+  border: none;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.fa-rocket {
+  color: #4f0fc5;
+}
+.first-item:hover .rocket-button {
+  opacity: 1;
+}
+.first-item:hover .delete-button {
+  opacity: 1;
+}
+.first-item-main:hover .delete-button {
+  opacity: 1;
+}
+.first-item-main:hover .rocket-button {
+  opacity: 1;
+}
